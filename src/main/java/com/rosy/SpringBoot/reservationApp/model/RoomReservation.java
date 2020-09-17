@@ -39,7 +39,7 @@ private String arrival_date;
 @Column(name = "departure_date")
 private String departure_date;
 
-@Column(name = "numberOfPersons")
+@Column(name = "number_of_persons")
 private int numberOfPersons;
 
 //@Column(name = "no_of_children")
