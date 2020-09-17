@@ -40,7 +40,7 @@ private String arrival_date;
 private String departure_date;
 
 @Column(name = "numberOfPersons")
-private long numberOfPersons;
+private int numberOfPersons;
 
 //@Column(name = "no_of_children")
 //private long no_of_children;
@@ -57,7 +57,7 @@ super();
 
 public RoomReservation(String firstName, String lastName, String email, 
 		String arrival_date, String departure_date, 
-		long numberOfPersons, String questions, String roomPreference) {
+		int numberOfPersons, String questions, String roomPreference) {
 super();
 this.firstName = firstName;
 this.lastName = lastName;
@@ -129,7 +129,7 @@ public void setDepartureDate(String departure_date) {
 this.departure_date = departure_date;
 }
 
-public long getNumberOfPersons() {
+public int getNumberOfPersons() {
 return numberOfPersons;
 }
 
@@ -141,7 +141,7 @@ return numberOfPersons;
 ////return no_of_children;
 //}
 
-public void setNumberOfPersons(long numberOfPersons) {
+public void setNumberOfPersons(int numberOfPersons) {
 this.numberOfPersons = numberOfPersons;
 }
 
