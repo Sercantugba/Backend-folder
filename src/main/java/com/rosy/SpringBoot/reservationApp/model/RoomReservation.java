@@ -64,6 +64,7 @@ this.lastName = lastName;
 this.email = email;
 this.arrival_date = arrival_date;
 this.departure_date = departure_date;
+//this.numberOfPersons = numberOfPersons;
 this.no_of_adults = no_of_adults;
 this.no_of_children = no_of_children;
 this.questions = questions;
