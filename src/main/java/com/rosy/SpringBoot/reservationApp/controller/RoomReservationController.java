@@ -78,8 +78,8 @@ public class RoomReservationController {
 	  reserveRoom.setPhone(reservedRoomDetails.getPhone()); 
 	  reserveRoom.setArrivalDate(reservedRoomDetails.getArrivalDate());
 	  reserveRoom.setDepartureDate(reservedRoomDetails.getDepartureDate());
-	  reserveRoom.setNoOfAdults(reservedRoomDetails.getNoOfAdults()); 
-	  reserveRoom.setNoOfChildren(reservedRoomDetails.getNoOfChildren()); 
+	  reserveRoom.setNumberOfPersons(reservedRoomDetails.getNumberOfPersons()); 
+//	  reserveRoom.setNoOfChildren(reservedRoomDetails.getNoOfChildren()); 
 	  reserveRoom.setQuestions(reservedRoomDetails.getQuestions()); 
 	  reserveRoom.setRoomPreference(reservedRoomDetails.getRoomPreference());
 	     

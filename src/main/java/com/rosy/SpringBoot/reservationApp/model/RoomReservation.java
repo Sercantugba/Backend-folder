@@ -39,11 +39,11 @@ private String arrival_date;
 @Column(name = "departure_date")
 private String departure_date;
 
-@Column(name = "no_of_adults")
-private long no_of_adults;
+@Column(name = "numberOfPersons")
+private long numberOfPersons;
 
-@Column(name = "no_of_children")
-private long no_of_children;
+//@Column(name = "no_of_children")
+//private long no_of_children;
 
 @Column(name = "questions")
 private String questions;
@@ -56,17 +56,17 @@ super();
 }
 
 public RoomReservation(String firstName, String lastName, String email, 
-		String arrival_date, String departure_date, long no_of_adults, 
-		long no_of_children, String questions, String roomPreference) {
+		String arrival_date, String departure_date, 
+		long numberOfPersons, String questions, String roomPreference) {
 super();
 this.firstName = firstName;
 this.lastName = lastName;
 this.email = email;
 this.arrival_date = arrival_date;
 this.departure_date = departure_date;
-//this.numberOfPersons = numberOfPersons;
-this.no_of_adults = no_of_adults;
-this.no_of_children = no_of_children;
+this.numberOfPersons = numberOfPersons;
+//this.no_of_adults = no_of_adults;
+//this.no_of_children = no_of_children;
 this.questions = questions;
 this.roomPreference=roomPreference;
 }
@@ -129,20 +129,20 @@ public void setDepartureDate(String departure_date) {
 this.departure_date = departure_date;
 }
 
-public long getNoOfAdults() {
-return no_of_adults;
+public long getNumberOfPersons() {
+return numberOfPersons;
 }
 
-public void setNoOfAdults(long no_of_adults) {
-this.no_of_adults = no_of_adults;
-}
+////public void setNoOfAdults(long no_of_adults) {
+////this.no_of_adults = no_of_adults;
+//}
 
-public long getNoOfChildren() {
-return no_of_children;
-}
+////public long getNoOfChildren() {
+////return no_of_children;
+//}
 
-public void setNoOfChildren(long no_of_children) {
-this.no_of_children = no_of_children;
+public void setNumberOfPersons(long numberOfPersons) {
+this.numberOfPersons = numberOfPersons;
 }
 
 public String getQuestions() {
